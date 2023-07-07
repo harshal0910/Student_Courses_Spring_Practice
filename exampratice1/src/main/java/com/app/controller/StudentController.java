@@ -38,7 +38,7 @@ public class StudentController {
 		return studService.addStudentDetails(stud);
 	}
 	
-	@PutMapping("/students/{studId}/{email}")
+	@PutMapping("/{studId}/students/{email}")
 	public ResponseEntity<?>updateStudDetails(@RequestBody @PathVariable Long  studId,@PathVariable String email) throws CustomException{
 		
 		return ResponseEntity.status(HttpStatus.CREATED).body(studService.updateStudentDetails(studId,email));

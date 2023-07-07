@@ -8,6 +8,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 
 import lombok.Getter;
@@ -32,7 +33,7 @@ public class Course extends BaseEntity{
 	private int fees;
 	private int minScore;
 	
-	@OneToMany(cascade = CascadeType.ALL,mappedBy = "course",orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "course",orphanRemoval = true,fetch = FetchType.EAGER)
 	private List<Student> studentList;
 
 	public Course(CourseDetail courseTitle, LocalDate startDate, LocalDate endDate, int fees, int minScore) {
