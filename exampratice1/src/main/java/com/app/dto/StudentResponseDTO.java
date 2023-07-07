@@ -9,12 +9,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class StudentDTO {
+@AllArgsConstructor
+public class StudentResponseDTO {
 	private String studentName;
 	private String email;
 	private CourseDetail courseDetail;
 	private int score;
-	private Long courseId;
+	
 }

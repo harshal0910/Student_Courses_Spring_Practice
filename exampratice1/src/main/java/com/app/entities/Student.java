@@ -17,6 +17,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
+
 public class Student extends BaseEntity {
 	
 	
@@ -27,7 +28,7 @@ public class Student extends BaseEntity {
 	@Enumerated(EnumType.STRING)
 	private CourseDetail courseDetail;
 	private int score;
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name="courseId")
 	private Course course;
 	
@@ -38,4 +39,5 @@ public class Student extends BaseEntity {
 		this.courseDetail = courseDetail;
 		this.score = score;
 	}
+	
 }

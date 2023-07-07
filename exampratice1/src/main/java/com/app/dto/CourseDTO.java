@@ -1,5 +1,7 @@
 package com.app.dto;
 
+import java.time.LocalDate;
+
 import com.app.entities.CourseDetail;
 
 import lombok.AllArgsConstructor;
@@ -9,12 +11,12 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class StudentDTO {
-	private String studentName;
-	private String email;
-	private CourseDetail courseDetail;
-	private int score;
-	private Long courseId;
+@AllArgsConstructor
+public class CourseDTO {
+	private CourseDetail courseTitle;
+	private LocalDate startDate;
+	private LocalDate endDate;
+	private int fees;
+	private int minScore;
 }

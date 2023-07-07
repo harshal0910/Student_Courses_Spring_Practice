@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.iacsd</groupId>
-	<artifactId>day16_lab</artifactId>
+	<artifactId>exampractice1</artifactId>
 	<version>0.0.1</version>
 	<name>day16_REST</name>
 	<description>Spring Boot Project for Backend of Full Stack App , validations , global exc handling , dto , model mapper</description>
